@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="mainContainer">
+            <div class="container">
+                <h1>Play Petal Around the Rose</h1>
+                <div class="dices">
+                    <div class="row">
+                        <img src="./img/default.png" alt="" class="dice" />
+                    </div>
+                    <div class="row">
+                        <img src="./img/default.png" alt="" class="dice" />
+                    </div>
+                    <div class="row">
+                        <img src="./img/default.png" alt="" class="dice" />
+                    </div>
+                    <div class="row">
+                        <img src="./img/default.png" alt="" class="dice" />
+                    </div>
+                    <div class="row">
+                        <img src="./img/default.png" alt="" class="dice" />
+                    </div>
+                </div>
+                <div class="inputbox">
+                    <label for="guess">Your Guess: </label>
+                    <input type="number" name="guess" id="guessInput" aria-label="Enter your guess" placeholder="Enter your guess" />
+                </div>
+                <div class="buttons">
+                    <button onclick="guess()">Accept Guess</button>
+                    <button onclick="rollDice()">Roll Dice</button>
+                </div>
+                <div class="result">
+                    <h4>RESULT:</h4>
+                    <h3 id="msg">Must Guess</h3>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Rules of the game</h1>
+                <p>
+                    The name of the game is <strong>Petals Around the Rose. </strong>The name of the game is important. The computer will roll five dice and ask you to guess the score for the roll. The score will always be zero or an even
+                    number. Your mission is to work out how the computer calculates the score and become a Potentate of the Rose.
+                </p>
+                <h1>Instruction</h1>
+                <p>Click on "Roll the Dice" to start the game. Type in your guess and click on "Accept Guess" to get result. Then either click on "Roll Dice" for another turn.</p>
+            </div>
+        </div>
+        <script defer src="./script.js"></script>
+    </body>
+</html>
